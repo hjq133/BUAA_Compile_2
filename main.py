@@ -9,14 +9,14 @@ sign_map = {'+': 0,
 
 matrix = [
     [1, -1, -1, -1, 1],
-    [1, 1, 1, 1, -1],
+    [1, 1, -1, -1, 1],
     [1, 1, None, None, 1],
     [-1, -1, -1, -1, 0],
     [1, 1, None, None, 1]
 ]
 
-file_path = sys.argv[1]
-
+# file_path = sys.argv[1]
+file_path = '../data.txt'
 stack = []
 vn_stack = []
 
