@@ -1,3 +1,5 @@
+import sys
+
 sign_map = {'+': 0,
             '*': 1,
             'i': 2,
@@ -13,7 +15,7 @@ matrix = [
     [1, 1, None, None, 1]
 ]
 
-file_path = input()
+file_path = sys.argv[1]
 
 stack = []
 vn_stack = []
@@ -75,3 +77,5 @@ while len(stack) != 0:
     stack = stack[:tmp]
     print("R")
     continue
+
+exit(0)
