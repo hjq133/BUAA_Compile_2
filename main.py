@@ -15,8 +15,11 @@ matrix = [
     [1, 1, None, None, 1]
 ]
 
-# file_path = sys.argv[1]
-file_path = '../data.txt'
+if sys.argv[0] == '/home/hjq133/myDesktop/编译作业/BUAA_Compile_2/main.py':
+    file_path = '../data.txt'
+else:
+    file_path = sys.argv[1]
+# file_path = '../data.txt'
 stack = []
 vn_stack = []
 
