@@ -77,3 +77,4 @@ def reduction(j):  # i 栈外字符, j: 栈中第一个终结符
 
 
 analyze()
+exit(0)
