@@ -28,11 +28,12 @@ def analyze():
     while i < len(lst):
         # 寻找栈中第一个终结符
         ch = lst[i]
+        if ch not in priority.keys():
+            print("E")
+            exit(0)
         j = len(stack) - 1
         while stack[j] == 'E':
             j -= 1
-        print("j:", j)
-        print("ch:", ch)
         if priority[stack[j]][ch] == -1 or priority[stack[j]][ch] == 0:  # < =
             move_in(ch)
             i += 1
