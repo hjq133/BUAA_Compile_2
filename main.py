@@ -13,7 +13,7 @@ matrix = [
     [1, 1, None, None, 1]
 ]
 
-file_path = '../data.txt'
+file_path = input()
 
 stack = []
 vn_stack = []
